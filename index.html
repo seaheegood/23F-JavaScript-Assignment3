@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Pizza</title>
+  </head>
+  <!-- Connect to js and css files -->
+  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <body>
+    <header>
+      <!-- Dynamically add student id and name -->
+      <p id="studentID"></p>
+      <button id="showStuBtn">Show Student ID</button>
+
+      <h1>Order Pizza</h1>
+    </header>
+
+    <!-- HTML form for customer to order pizza -->
+    <form>
+      <div class="pizza">
+        <label for="pizzaType">Pizza Types</label>
+        <select id="pizzaType">
+          <option value="pepperoni">Pepperoni</option>
+          <option value="Sausage">Sausage</option>
+          <option value="mushroom">mushroom</option>
+          <option value="hawaiian">Hawaiian</option>
+          <option value="canadian">Canadian</option>
+          <option value="combination">Combination</option>
+        </select>
+      </div>
+
+      <div class="pizza">
+        <label for="pizzaSize">Pizza Size</label>
+        <select id="pizzaSize">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="superLarge">Super Large</option>
+        </select>
+      </div>
+
+      <div class="pizza">
+        <label for="crustType">Crust Types</label>
+        <select id="crustType">
+          <option value="original">Original</option>
+          <option value="thin">Thin</option>
+          <option value="pan">Pan</option>
+          <option value="chicago">Chicago-style</option>
+        </select>
+      </div>
+
+      <div class="suaceSelect">
+        <h4>Sauce</h4>
+        <input type="checkbox" name="sauce" value="tomato" />
+        <label>Tomato</label>
+        <input type="checkbox" name="sauce" value="cream" />
+        <label>Cream</label>
+        <input type="checkbox" name="sauce" value="sourCream" />
+        <label>Sour Cream</label>
+        <input type="checkbox" name="sauce" value="oliveOil" />
+        <label>Olive Oil</label>
+      </div>
+
+      <div class="toppingSelect">
+        <h4>Topping</h4>
+        <input type="checkbox" name="topping" value="bacon" />
+        <label>Bacon</label>
+        <input type="checkbox" name="topping" value="beef" />
+        <label>Beef</label>
+        <input type="checkbox" name="topping" value="chicken" />
+        <label>Chicken</label>
+        <input type="checkbox" name="topping" value="onion" />
+        <label>Onion</label>
+        <input type="checkbox" name="topping" value="olive" />
+        <label>Olive</label>
+      </div>
+
+      <div class="customerInfo">
+        <h4>Customer Info</h4>
+        <div>
+          <input type="text" id="name" placeholder="Name" />
+        </div>
+        <div>
+          <input type="text" id="phoneNum" placeholder="Phone Number" />
+        </div>
+        <div>
+          <input type="text" id="address" placeholder="Address" />
+        </div>
+      </div>
+
+      <input type="submit" value="Order" />
+    </form>
+
+    <div class="checkOrder">
+      <h3>Check My Order</h3>
+      <p id="checkMyOrder"></p>
+    </div>
+  </body>
+</html>

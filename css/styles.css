@@ -1,0 +1,48 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 70%;
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: rgb(241, 183, 190);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  background-color: brown;
+  color: #fff;
+  padding: 0.3rem;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.pizza {
+  margin: 1rem;
+}
+
+.customerInfo > div {
+  margin: 1rem;
+}
+
+.checkOrder {
+  background-color: beige;
+  text-align: center;
+}
+
+.checkOrder > p {
+  padding: 0.1rem;
+}
+
+li {
+  list-style: none;
+}
